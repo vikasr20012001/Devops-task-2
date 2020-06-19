@@ -13,3 +13,8 @@ Now build the image and push it to the docker hub using the following commands
 ![4](https://user-images.githubusercontent.com/66811679/85101920-bf53d180-b1c0-11ea-81da-d281907a61e0.PNG)
 
 Launching the container: With the docker image created , it is now up to make the docker commands run inside the container launched by using the above image created so that Jenkins can directly launch the required containers. For this I've directly mounted the "docker.sock file" on to the container and the docker config files on to the container to make the docker commadns executable. Also expose the container on the port 8080 to access the WebUI of the Jenkins.
+
+![5](https://user-images.githubusercontent.com/66811679/85102355-b7486180-b1c1-11ea-823b-23cbeb77bb41.PNG)
+
+Jenkins running on the port number 8080,  enter the jenkins and  install the GITHUB plugin adn the build pipeline plugin.
+
