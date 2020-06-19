@@ -46,7 +46,8 @@ Jenkins running on the port number 8080,  enter the jenkins and  install the GIT
 
 Moving furthur into various jobs of the jenkins. I've created a jenkins pipeline of 4 jobs wherein:
 
-JOB 1 : Pulls the code from github and copies it in the folder named code in the /var folder of the base container named "jen1" in my case. Ive used a remote URL trigger to trigger the job as soon as the code is launched to github by placing it in the post-commit actions of the git.
+## JOB 1 : 
+Pulls the code from github and copies it in the folder named code in the /var folder of the base container named "jen1" in my case. Ive used a remote URL trigger to trigger the job as soon as the code is launched to github by placing it in the post-commit actions of the git.
 
 ![19](https://user-images.githubusercontent.com/66811679/85107770-bfa59a00-b1cb-11ea-968f-89cac9f7d3a7.PNG)
 
@@ -56,13 +57,15 @@ JOB 1 : Pulls the code from github and copies it in the folder named code in the
 
 ![b](https://user-images.githubusercontent.com/66811679/85108518-1495e000-b1cd-11ea-889c-b28807c07eb0.PNG)
 
-JOB 2 : This job triggers as soon as the JOB1 is built successfully and this job checks the code and respectively launches the respective interpreter, copies the code to that interpreter container and deploys the code to the webserver.
+## JOB 2 : 
+This job triggers as soon as the JOB1 is built successfully and this job checks the code and respectively launches the respective interpreter, copies the code to that interpreter container and deploys the code to the webserver.
 
 
 ![c](https://user-images.githubusercontent.com/66811679/85109922-5d4e9880-b1cf-11ea-8342-2e567db0e3e4.PNG)
 
 
-JOB3 : This JOB simultaneously triggers after the successful build of the job2 and this job checks the "http code" of the webserver i.e., this job ensure if the code is working properly on the wenserver if it has any error it sends a mail to the developer to recheck the code.
+## JOB 3 :
+This JOB simultaneously triggers after the successful build of the job2 and this job checks the "http code" of the webserver i.e., this job ensure if the code is working properly on the wenserver if it has any error it sends a mail to the developer to recheck the code.
 
 ![e](https://user-images.githubusercontent.com/66811679/85111107-1eb9dd80-b1d1-11ea-9d02-efca2e429d13.PNG)
 
@@ -71,7 +74,8 @@ JOB3 : This JOB simultaneously triggers after the successful build of the job2 a
 
 
 
-JOB4 : After all the above mentioned jobs are run successfully then this job triggers and keeps on checking whether the interpreter container is running and if in case the container stops it starts the container again. Finally it acts as a monitoring job to monitor the interpreter container.
+## JOB4 :
+After all the above mentioned jobs are run successfully then this job triggers and keeps on checking whether the interpreter container is running and if in case the container stops it starts the container again. Finally it acts as a monitoring job to monitor the interpreter container.
 
 ![s](https://user-images.githubusercontent.com/66811679/85113373-6aba5180-b1d4-11ea-9d68-d0d5d78d3aad.PNG)
 
