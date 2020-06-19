@@ -75,7 +75,7 @@ JOB4 : After all the above mentioned jobs are run successfully then this job tri
 
 ![s](https://user-images.githubusercontent.com/66811679/85113373-6aba5180-b1d4-11ea-9d68-d0d5d78d3aad.PNG)
 
-![k](https://user-images.githubusercontent.com/66811679/85113402-73128c80-b1d4-11ea-8db8-904a489dbf69.PNG)
+![ww](https://user-images.githubusercontent.com/66811679/85137408-66a32980-b1fe-11ea-8f2b-602e7f477b47.PNG)
 
 With all the jobs successfully run and no errors in the code , the port 80 of my apache webserver shows this output which is the php code in my github:
 
