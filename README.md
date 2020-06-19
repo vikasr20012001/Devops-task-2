@@ -4,3 +4,12 @@ A CI/CD Pipeline implementation, or Continuous Integration/Continuous Deployment
 
 ## Creation of Dockerfile: 
 Using the dockefile concept I've built an images that has git and jenkins pre installed and starts the jenkins services as soon as the container is lauched using that image. I've pre-installed git to support the github plugin in the jenkins services.
+
+
+![3](https://user-images.githubusercontent.com/66811679/85101522-d0501300-b1bf-11ea-9c35-fe40c9f8ac4e.PNG)
+
+Now build the image and push it to the docker hub using the following commands
+
+![4](https://user-images.githubusercontent.com/66811679/85101920-bf53d180-b1c0-11ea-81da-d281907a61e0.PNG)
+
+Launching the container: With the docker image created , it is now up to make the docker commands run inside the container launched by using the above image created so that Jenkins can directly launch the required containers. For this I've directly mounted the "docker.sock file" on to the container and the docker config files on to the container to make the docker commadns executable. Also expose the container on the port 8080 to access the WebUI of the Jenkins.
