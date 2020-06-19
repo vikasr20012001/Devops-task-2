@@ -78,6 +78,8 @@ JOB4 : After all the above mentioned jobs are run successfully then this job tri
 
 With all the jobs successfully run and no errors in the code , the port 80 of my apache webserver shows this output which is the php code in my github:
 
-![tt](https://user-images.githubusercontent.com/66811679/85115487-f930d200-b1d8-11ea-9168-46800ba13564.PNG)
+![tt](https://user-images.githubusercontent.com/66811679/85116539-b53ecc80-b1da-11ea-854d-610a95fcfb0f.PNG)
+
+Using the build pipeline plugin I've created a project overview of the jobs so that it would be easy to manage the jobs which looks like :
 
 
